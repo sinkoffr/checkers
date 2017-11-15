@@ -1,0 +1,24 @@
+@import "bootstrap";
+
+.text-center {
+    text-align: center;
+    font-size: 50px;
+}
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 90px;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+table {
+    margin: 50px 100px;
+}
