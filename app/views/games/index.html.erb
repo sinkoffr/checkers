@@ -1,21 +1,12 @@
+
 <h1 class="text-center">Checkers</h1>
 
+<div class = "col-10 offset-1">
+  <p class ="text-center">
+    Welcome to online checkers!
+    Click the new game button to get started.
+  </p>
+  
+  <%= link_to "Click HERE to start a game", new_game_path, class: 'btn' %>
 
-<div class="row" >
-<table class="col-10 offset-1">
-    <% 4.times do |row| %>
-        <tr>
-            <% 4.times do |square| %>
-                <td class="red"><%= print "      " %></td>
-                <td class="black"><%= print "      " %></td>
-            <% end %>
-        </tr>
-        <tr>
-            <% 4.times do |square| %>
-                <td class="black"><%= print "      " %></td>
-                <td class="red"><%= print "      " %></td>
-            <% end %>
-        </tr>
-    <% end %>
-</table>
 </div>

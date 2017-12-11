@@ -59,3 +59,9 @@ gem 'popper_js', '~> 1.11.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+end
+
+gem 'simple_form'

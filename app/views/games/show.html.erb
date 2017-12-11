@@ -1,0 +1,29 @@
+
+  <h1 class="text-center">Checkers</h1>
+  <br class="clear" />
+  <div class="row" >
+  <div class="col-10 offset-1">
+    <table>
+      <% 8.times do |row| %>
+        <tr>
+          <% 8.times do |square| %>
+            <% if (square + row) %2 == 0 %>
+              <% piece = @game.pieces.where(x_position:square, y_position:row).first %>
+              <td class="black">
+                <% if piece && row <= 3 %>
+                  <p>&#9930;</p>
+                <% elsif piece && row >= 5 %>
+                  <p>&#9929;</p>
+                <% end %>
+              </td>
+            <% else %>
+              <td class="red"></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>  
+    </table>
+  </div>
+  </div>
+ 
+
