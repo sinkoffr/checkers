@@ -10,10 +10,8 @@
             <% if (square + row) %2 == 0 %>
               <% piece = @game.pieces.where(x_position:square, y_position:row).first %>
               <td class="black">
-                <% if piece && row <= 3 %>
-                  <p>&#9930;</p>
-                <% elsif piece && row >= 5 %>
-                  <p>&#9929;</p>
+                <% if piece %>
+                  <%= piece.image.html_safe %>
                 <% end %>
               </td>
             <% else %>
